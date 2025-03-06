@@ -1,5 +1,5 @@
 import unittest
-from Demos.Module2.palindrome_check import is_palindrome, is_palindrome2
+from Demos.Module2.palindrome_check import is_palindrome
 
 
 class MyTestCase(unittest.TestCase):
