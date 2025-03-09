@@ -36,7 +36,7 @@ def get_and_handle_single_file(file_path: str, prompt: str):
     Receives a file path and a prompt, calls ask_gpt method, passing the prompt.
     It then writes the response into the file using the populate_file method,
     and prints it to the console.
-    :param code_file_path: string of file path to write to
+    :param file_path: string of file path to write to
     :param prompt: string of prompt to send to gpt model
     """
     response = ask_gpt(prompt)
@@ -50,7 +50,7 @@ def get_and_handle_code_with_tests_files(code_file_path: str, tests_file_path: s
     word class and placing the first half in code_file_path and the second in test_file_path. It then
     prints the response in full to the console.
     :param code_file_path: string of file path to write code to
-    :param test_file_path: string of file path to write test cases to
+    :param tests_file_path: string of file path to write test cases to
     :param prompt: string of prompt to send to gpt model
     """
     response = ask_gpt(prompt)
@@ -133,9 +133,9 @@ def create_dictionary_with_dictionary_comprehension_and_tests(code_file_path: st
 def main():
     code_path = os.path.join(os.path.dirname(__file__), 'generated_students.py')#create file path for code
     tests_path = os.path.join(os.path.dirname(__file__), 'test_students.py')#create file path for tests
-    #create_basic_dictionary(code_path)
-    #create_dictionary_with_dictionary_comprehension(code_path)
-    #create_dictionary_formatted_for_readability(code_path)
+    create_basic_dictionary(code_path)
+    create_dictionary_with_dictionary_comprehension(code_path)
+    create_dictionary_formatted_for_readability(code_path)
     create_dictionary_with_dictionary_comprehension_and_tests(code_path, tests_path)
 
 if __name__ == '__main__':
