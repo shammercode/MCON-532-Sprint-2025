@@ -77,7 +77,7 @@
     const chatHistory = document.getElementById('chat-history');
 
     chatForm.addEventListener('submit', function(event) {
-        event.preventDefault();//prevent it from reloading
+        event.preventDefault();
         const message = chatInput.value.trim()
         if (message) {
             const messageWrapper = document.createElement('div');
@@ -93,9 +93,9 @@
 
             fetch('response', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },//send it as a form
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams({
-                    'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,// send in token so can connect to backend, need to prevent CSRF attack
+                    'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,
                     'message': message
                 })
             })

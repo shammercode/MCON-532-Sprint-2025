@@ -59,7 +59,7 @@ ROOT_URLCONF = 'Timely.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates'],#telling us which directories we'll look for templates=html files with a specific syntax, but have variables you need to resolve
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
