@@ -1,9 +1,17 @@
 requests
 openai
 python-dotenv
+# For web development
 django
 djangorestframework
+# Postgresql database adapter
 psycopg2-binary
+# For data manipulation and analysis
 numpy
 pandas
 scikit-learn
+# Google authentication and API client libraries
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
