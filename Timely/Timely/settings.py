@@ -90,7 +90,7 @@ OPEN_AI_API_KEY=os.getenv("OPENAI_API_KEY", None)
 OPENAI_ORG_ID=os.getenv("OPENAI_ORG_ID", None)
 
 # Google Oath2 and Calendar API
-GOOGLE_CLIENT_SECRET_FILE = BASE_DIR / "credentials.json"
+GOOGLE_CLIENT_SECRET_FILE = os.path.join(BASE_DIR, 'credentials.json')
 GOOGLE_REDIRECT_URI = "http://localhost:8001/calendar/oauth2callback"
 
 # Password validation
