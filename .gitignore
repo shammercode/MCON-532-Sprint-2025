@@ -1,0 +1,23 @@
+# Ignore virtual environment files
+venv/*
+
+# Ignore environment variable files
+**/.env
+/Timely/.env
+
+# Ignore Python cache files
+**/.pyc
+**/__pycache__/
+
+# Ignore static files
+/Timely/static/*
+
+# Ignore sensitive files
+/Timely/client_secret_*.json
+/Timely/credentials.json
+
+# Ignore database files
+/Timely/db.sqlite3
+
+Timely/credentials.json
+
