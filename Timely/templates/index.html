@@ -120,6 +120,7 @@
     {% if user.is_authenticated %}
     <div>
         <span>Welcome, {{ user.first_name }} {{ user.last_name }}!</span>
+        <a href="/calendar/list">Events</a>
         <a href="/logout">Logout</a>
     </div>
     {% else %}
